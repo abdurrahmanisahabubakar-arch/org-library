@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | AIA Smart Library</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">AIA</span>
+        <span>Smart Library<small>Read. Reserve. Learn.</small></span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" data-nav-links>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Books.html">Books</a></li>
+        <li><a href="rooms.html">Rooms & Seat</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="login-link current" href="log-in.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="auth-wrap">
+    <section class="auth-card">
+      <span class="eyebrow">Member access</span>
+      <h1>Login</h1>
+      <p class="muted">Use this demo form to enter the library dashboard flow.</p>
+      <form data-demo-form>
+        <div class="form-message">Login demo complete. You can now browse the library.</div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" required placeholder="Enter your email">
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" type="password" required placeholder="Enter your password">
+        </div>
+        <button class="btn" type="submit">Login</button>
+      </form>
+      <p class="muted" style="margin-top: 16px;">Do not have an account? <a href="sign-in.html">Sign up</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>AIA Library &copy; 2026. All rights reserved.</p>
+      <p>Login</p>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

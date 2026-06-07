@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | AIA Smart Library</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">AIA</span>
+        <span>Smart Library<small>Read. Reserve. Learn.</small></span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" data-nav-links>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Books.html">Books</a></li>
+        <li><a href="rooms.html">Rooms & Seat</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="current" href="contact.html">Contact</a></li>
+        <li><a class="login-link" href="log-in.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="page-title">
+      <span class="eyebrow">Contact</span>
+      <h1>Get help from the library team.</h1>
+      <p class="muted">Send a message about books, reservations, accounts, or library support.</p>
+    </div>
+    <div class="info-grid">
+      <article class="contact-card">
+        <h3>Visit</h3>
+        <p class="muted">AIA Smart Library, Main Reading Hall</p>
+      </article>
+      <article class="contact-card">
+        <h3>Email</h3>
+        <p class="muted">support@aialibrary.test</p>
+      </article>
+      <article class="contact-card">
+        <h3>Hours</h3>
+        <p class="muted">Monday to Saturday, 8:00 AM to 6:00 PM</p>
+      </article>
+    </div>
+    <section class="catalog-panel" style="margin-top: 24px;">
+      <h2>Send Message</h2>
+      <form class="contact-form" data-demo-form>
+        <div class="form-message">Your message has been sent.</div>
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" required placeholder="Your email">
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" required placeholder="How can we help?"></textarea>
+        </div>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>AIA Library &copy; 2026. All rights reserved.</p>
+      <p>Contact</p>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

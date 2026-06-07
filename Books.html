@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books | AIA Smart Library</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">AIA</span>
+        <span>Smart Library<small>Read. Reserve. Learn.</small></span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" data-nav-links>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="current" href="Books.html">Books</a></li>
+        <li><a href="rooms.html">Rooms & Seat</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="login-link" href="log-in.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="page-title">
+      <span class="eyebrow">Recommended for you</span>
+      <h1>Books Catalog</h1>
+      <p class="muted">Search, filter, save favorites, and borrow or return books from the front-end catalog.</p>
+    </div>
+
+    <section class="catalog-shell" aria-label="Book catalog">
+      <div class="catalog-panel">
+        <div class="search-row">
+          <div class="field">
+            <label for="book-search">Search books</label>
+            <input id="book-search" data-search type="search" placeholder="Search by title, author, or category">
+          </div>
+          <div class="field">
+            <label for="availability">Availability</label>
+            <select id="availability" data-availability>
+              <option>All</option>
+              <option>Available</option>
+              <option>Borrowed</option>
+            </select>
+          </div>
+        </div>
+        <div class="chip-row" aria-label="Book categories">
+          <button class="chip active" type="button" data-category="All">All</button>
+          <button class="chip" type="button" data-category="Kids">Kids</button>
+          <button class="chip" type="button" data-category="Adventure">Adventure</button>
+          <button class="chip" type="button" data-category="Student">Student</button>
+          <button class="chip" type="button" data-category="Hausa">Hausa</button>
+          <button class="chip" type="button" data-category="Other">Other</button>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <strong data-result-count>0 books found</strong>
+        <a class="btn ghost" href="rooms.html">Reserve Reading Seat</a>
+      </div>
+
+      <div class="empty-state" data-empty hidden>
+        <h2>No books found</h2>
+        <p class="muted">Try another search word or choose a different category.</p>
+      </div>
+
+      <div class="book-grid" data-book-grid></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>AIA Library &copy; 2026. All rights reserved.</p>
+      <p>Books Catalog</p>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+  <script src="js/books.js"></script>
+</body>
+</html>
